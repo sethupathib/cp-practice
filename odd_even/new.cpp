@@ -1,6 +1,6 @@
 
 //bitwise xor practice
-//finds unique number.
+//finds even or odd.
 //author : sethupathi
 
 #include<bits/stdc++.h>
