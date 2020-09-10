@@ -9,49 +9,61 @@ using namespace std;
 void solution(int n,int x,int *a)
 {
 
-int first=-1,last=-1, last_f=0;
+int first=0,last=0;
 
-for (int i = 0; i < n; ++i)
-{
-	if(x!=a[i])
-		continue; 	
-	if (first==-1)			//beautifully crafted code
-	{
-		first=i;
+// for (int i = 0; i < n; ++i)
+// {
+// 	if(x!=a[i])
+// 		continue; 	
+// 	if (first==-1)			//beautifully crafted code
+// 	{
+// 		first=i;
 
-	}
-	last=i;
-	cout<<last<<endl;
-}
+// 	}
+// 	last=i;
+// 	cout<<last<<endl;
+// }
 
-if (first!=-1)
-{
-	cout<<"first occurence-->"<<first<<endl;
-	cout<<"last occurence-->"<<last<<endl;
-	/* code */
-}
+// if (first!=-1)
+// {
+// 	cout<<"first occurence-->"<<first<<endl;
+// 	cout<<"last occurence-->"<<last<<endl;
+// 	/* code */
+// }
 
 
 
 
 //all occurences
 
-// for (int i = 0; i < n; ++i)
-// {
-// 	/* code */
+for (int i = 0; i < n; ++i)
+{
 
-// if (x==a[i])
+if (x==a[i])
 
-// {
+{
 
-// 	cout<<"occurence "<<last_f+1<<" --> position "<<a[last_f]+i<<endl;
+	cout<<"occurence "<<last+1<<" --> position "<<i<<endl;
 
-// 	++last_f;
-// 	/* code */
-// }
-// }
-	// cout<<last;
+	last++;
+	
+}}
+
+
+for (int i = 0; i < n; ++i)
+{
+
+if (x==a[i])
+{
+   // first++;
+	cout<<"first occurence -->"<<i;
+   break;
 }
+}
+// cout<<a[]last;
+}
+	
+
 
 
 int main()
