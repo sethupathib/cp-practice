@@ -9,7 +9,7 @@ using namespace std;
 void solution(int n,int x,int *a)
 {
 
-int first=-1,last=0;
+int first=-1,last=-1, last_f=0;
 
 for (int i = 0; i < n; ++i)
 {
@@ -44,9 +44,9 @@ if (first!=-1)
 
 // {
 
-// 	cout<<"occurence "<<last+1<<" --> position "<<a[last]+1<<endl;
+// 	cout<<"occurence "<<last_f+1<<" --> position "<<a[last_f]+i<<endl;
 
-// 	++last;
+// 	++last_f;
 // 	/* code */
 // }
 // }
