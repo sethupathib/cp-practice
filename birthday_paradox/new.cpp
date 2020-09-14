@@ -24,6 +24,11 @@ int main()
 
     float p;
     cin>>p;
+	  if(p==1.0)
+    {
+         cout<<"366"<<endl;
+         return 0;
+    }
 
     while(x> 1-p)
     {
