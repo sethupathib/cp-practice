@@ -1,4 +1,3 @@
-//almost prime
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long
