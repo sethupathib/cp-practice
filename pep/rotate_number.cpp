@@ -7,6 +7,12 @@ void solve(int n, int k){
         r=r/10;
         cnt++;
     }
+	if(k<0) {
+	k+=cnt;
+	}
+	if(k>cnt){
+	k=k-cnt;
+	}
     int t= pow(10,k);
     // cout<<t;
     int p,rem;
