@@ -1,11 +1,9 @@
-//bugs present
-//need to debug
 #include <iostream>
 using namespace std;
 
-void reverse(char *a, int start, int n){
+void reverse(int *a, int start, int n){
     int i=start;
-    int j=n-1;
+    int j=n;
     while(i<j){
         int temp = a[i];
         a[i] =a[j];
@@ -15,7 +13,7 @@ void reverse(char *a, int start, int n){
     }
 }
 
-void solve(char *a, int n, int k){
+void solve(int *a, int n, int k){
     k = k%n;
     if(k<0){
         k+=n;
@@ -39,15 +37,18 @@ void solve(char *a, int n, int k){
 
 int main() {
 	// your code goes here
-char a1[9] = "abcdefgh";
-// int a1[4] = {1,2,3,4};
-// int n1 = sizeof(a1)/sizeof(int);
-int n1=9;
-int k=3;
+// int a1[9] = "abcdefgh";
+int a1[4] = {1,2,3,4};
+int n1 = sizeof(a1)/sizeof(int);
+// int n1=9;
+int k=1;
+
+    solve(a1,n1,k); 
+    // reverse(a1,0,n1-1);	
+
+
 // for(int i=0;i<n1;i++){
 //         cout<<a1[i]<<" ";
-//     }
-
-    solve(a1,n1,k);	
+    // }
 	return 0;
 }
