@@ -2,7 +2,7 @@
 using namespace std;
 
 int solve(int *a, int id, int n){
-    if(id>n) return 0;
+    if(id==n) return a[id];
     int misa = solve(a,id+1,n);
     if(misa>a[id]){
         return misa;
