@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define R 3
+#define R 3 
 #define C 3
 
 void printArray(int a[][3],int n){
